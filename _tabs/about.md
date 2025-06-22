@@ -3,6 +3,11 @@
 icon: fas fa-info-circle
 order: 4
 ---
+ 
+I'm **Vamsi Maniyam**, a Cloud DevOps Engineer with over 10 years of experience building and managing scalable infrastructure. I specialize in **AWS**, **Kubernetes**, **GitOps**, **Terraform**, and **observability stacks**.
 
-> Add Markdown syntax content to file `_tabs/about.md`{: .filepath } and it will show up on this page.
-{: .prompt-tip }
+
+
+This blog is my space to document what I learn, share practical DevOps scenarios, and help others solve real-world challenges.
+
+
