@@ -7,7 +7,7 @@ image: /images/post-1/docker-build-push-gitlab-ci.png
 show_top_image: false
 ---
 
-To make deployments easier and more reliable, I created a GitLab CI/CD pipeline.
+To make deployments easier and more reliable, I have created a GitLab CI/CD pipeline.
 
 Whenever I push code to a `release-X.X.X` branch, GitLab automatically builds a Docker image with the updated `index.html`, tags the repository, and pushes the image to DockerHub. A manual deployment job is also available, giving me full control over when to release the image.
 
