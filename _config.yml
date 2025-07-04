@@ -61,7 +61,7 @@ analytics:
   google:
     id: # fill in your Google Analytics ID
   goatcounter:
-    id: # fill in your GoatCounter ID
+    id: vamsi193
   umami:
     id: # fill in your Umami ID
     domain: # fill in your Umami domain
@@ -201,6 +201,7 @@ plugins:
   - jekyll-archives
   - jekyll-paginate
   - jekyll-sitemap
+  - jekyll-remote-theme
 
 sass:
   style: compressed

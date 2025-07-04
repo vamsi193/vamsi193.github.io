@@ -17,6 +17,7 @@ group :jekyll_plugins do
   gem "jekyll-archives"
   gem "jekyll-paginate"
   gem "jekyll-sitemap"
+  gem "jekyll-remote-theme"
 end
 
 gem "wdm", "~> 0.2.0", :platforms => [:mingw, :x64_mingw, :mswin]
