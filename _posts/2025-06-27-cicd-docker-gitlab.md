@@ -1,7 +1,7 @@
 ---
 title: CI/CD Pipeline for Versioned Docker Releases Using GitLab
 date: 2025-03-27 12:00:00 +0800
-categories: [devops, git, gitlab]
+categories: [DevOps, GitLab, Docker]
 tags: [gitlab, docker, git]
 image: /images/post-1/docker-build-push-gitlab-ci.png
 show_top_image: false
