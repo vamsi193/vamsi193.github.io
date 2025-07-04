@@ -139,7 +139,7 @@ workflow:
 
 ---
 
-### Insights from This Pipeline
+### Insights from this Pipeline
 
 - Built and pushed Docker images when a release tag is created  [DockerHub](https://hub.docker.com/r/vamsi193/release-cicd/tags)
 
