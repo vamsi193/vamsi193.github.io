@@ -76,17 +76,33 @@ script_includes:
         </span>
 
         <div>
-          <!-- pageviews -->
-          {% if site.pageviews.provider and site.analytics[site.pageviews.provider].id %}
-            <span>
-              <em id="pageviews">
-                <i class="fas fa-spinner fa-spin small"></i>
-              </em>
-              {{ site.data.locales[lang].post.pageview_measure }}
-            </span>
-          {% endif %}
+          <span>
+            <em id="pageviews"><i class="fas fa-spinner fa-spin small"></i></em> views
+          </span>
 
-          <!-- read time -->
+          <script>
+          document.addEventListener('DOMContentLoaded', () => {
+            const pv = document.getElementById('pageviews');
+            if (pv !== null) {
+              const uri = location.pathname.replace(/\/$/, '');
+              const url = `https://vamsi193.goatcounter.com/counter${uri}.json`;
+
+              fetch(url)
+                .then((res) => res.ok ? res.json() : Promise.reject('fetch failed'))
+                .then((data) => {
+                  if (data && data.count) {
+                    pv.innerText = new Intl.NumberFormat().format(data.count);
+                  } else {
+                    pv.innerText = '—';
+                  }
+                })
+                .catch(() => {
+                  pv.innerText = '—';
+                });
+            }
+          });
+          </script>
+
           {% include read-time.html content=content prompt=true lang=lang %}
         </div>
       </div>
