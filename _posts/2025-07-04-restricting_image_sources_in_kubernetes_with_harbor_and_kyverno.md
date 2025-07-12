@@ -154,7 +154,7 @@ spec:
           kinds:
             - Pod
       validate:
-        message: "Only images from ec2-3-148-167-213.us-east-2.compute.amazonaws.com are allowed."
+        message: "Only images from Internal Harbor registery are allowed."
         pattern:
           spec:
             containers:
@@ -237,13 +237,13 @@ Error from server: admission webhook "validate.kyverno.svc-fail" denied the requ
 resource Pod/default/nginx-normal was blocked due to the following policies
 
 restrict-image-registry:
-  allow-only-internal-registry: 'validation error: Only images from ec2-3-148-167-213.us-east-2.compute.amazonaws.com
+  allow-only-internal-registry: 'validation error: Only images from Internal Harbor registery 
     are allowed. rule allow-only-internal-registry failed at path /spec/containers/0/image/'
 ```
 
-This pod failed to launch. Kyverno blocked the request and returned a validation error:
+This pod failed to launch. Kyverno blocked the request and returned a validation error
 
-<p style="color: darkred;"><strong>Only images from ec2-3-148-167-213.us-east-2.compute.amazonaws.com:31034 are allowed.</strong></p>
+<p style="color: darkred;"><strong>Only images from Internal Harbor registery are allowed.</strong></p>
 
 
 
