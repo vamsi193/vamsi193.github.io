@@ -11,7 +11,7 @@ image:
 show_top_image: false
 ---
 
-<span style="color:rgb(78, 191, 12);"><strong>[ContainerSSH]([ContainerSSH](https://containerssh.io/v0.5/))</strong></span> is a modern SSH server that starts a new container for every SSH connection. Instead of granting direct access to a host system, it dynamically spins up a container when a user logs in, providing a secure, clean, and resource efficient environment.
+<span style="color:rgb(78, 191, 12);"><strong>[ContainerSSH]([ContainerSSH](https://containerssh.io/v0.5/)</strong></span> is a modern SSH server that starts a new container for every SSH connection. Instead of granting direct access to a host system, it dynamically spins up a container when a user logs in, providing a secure, clean, and resource efficient environment.
 
 For every SSH connection, ContainerSSH automatically starts a fresh container, seamlessly drops the user into it, and removes the container when the session ends. There’s no need for system users, authentication and container configuration are handled dynamically via webhooks.
 
